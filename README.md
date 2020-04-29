@@ -10,12 +10,29 @@ The user installs the SSApp Doodle inside his web-wallet and grants access to th
 The user can now create a meeting by providing
 
 ![High Level](images/HighLevel%20-%20SSApp%20Integration.png)
-![SSApp Architecture](images/HighLevel%20-%20SSApp.png)
-![Swarm](images/HighLevel%20-%20swarm%20overview.png)
-![](images/HighLevel%20-%20swarm%20with%20offline%20nodes.png)
-![](images/UseCase-Create-a-new-meeting.png)
 
-## Doodle rest API
+## SSoddle Architecture Overview
+![SSApp Architecture](images/HighLevel%20-%20SSApp.png)
+
+## Swarm description
+![Swarm](images/HighLevel%20-%20swarm%20overview.png)
+
+## Consensus algorithm
+
+A consensus algorithm is a process in computer science used to achieve agreement on a single data value among distributed processes or systems. Consensus algorithms are designed to achieve reliability in a network involving multiple unreliable nodes. Solving that issue -- known as the consensus problem -- is important in distributed computing and multi-agent systems.
+
+To accommodate this reality, consensus algorithms necessarily assume that some processes and systems will be unavailable and that some communications will be lost. As a result, consensus algorithms must be fault-tolerant. They typically assume, for example, that only a portion of nodes will respond but require a response from that portion, such as 51%, at a minimum.
+
+![SSoddle Offline nodes](images/HighLevel%20-%20swarm%20with%20offline%20nodes.png)
+
+## SSoddle UseCases
+
+### Create a meeting
+
+![Create a meeting](images/UseCase-Create-a-new-meeting.png)
+
+## SSoodle rest API
+
 
 `GET` Get users
 
@@ -72,6 +89,8 @@ The user can now create a meeting by providing
         "acceptance": "50%"
     }
 
+These APIs were defined after evaluating what was part of [Doodle API](https://documenter.getpostman.com/view/10109978/SWT7E1Sc?version=latest#intro)  
+
 ## Web-Wallet: first run 
 The SSApp application loader is the first thing you'll see after running the [web-wallet](https://github.com/PrivateSky/web-wallet) web server and accessing `http://localhost:8080/secure-channels/loader`. It is a basic web application which allows creation and loading of wallets based on the menu wallet template. The SSApp loader registers a service worker responsible with loading the built SSApps from the Brick Storage.
     
@@ -87,7 +106,7 @@ The SSApp application loader is the first thing you'll see after running the [we
 ![High Level](images/Screenshot%20-%20web-wallet%20first%20run%2003.png)
 3. Secret seed is generated (keep it safe, it can be used to restore a dossier) and wallet can be opened
 ![High Level](images/Screenshot%20-%20web-wallet%20first%20run%2004.png)
-1. Enter the pin and launch *Profile* SSApps 
+1. Enter the pin and launch [*Profile SSApps*](https://github.com/PrivateSky/profile-app)  
 ![High Level](images/Screenshot%20-%20web-wallet%20first%20run%2005.png)
 ![High Level](images/Screenshot%20-%20web-wallet%20first%20run%2006.png)
 
@@ -97,6 +116,6 @@ The SSApp application loader is the first thing you'll see after running the [we
 - [x] Prepare development environment [PrivateSky Installation](https://privatesky.xyz/?Start/installation) 
 - [x] Run the Web-Wallet 
 - [ ] Follow *How to create a SSApp* [Todo-App](https://privatesky.xyz/?Howto/a-ssapp)
-- [ ] fds
-- [ ] fds
-- [ ] fsd
+- [ ] Define the major use-cases
+- [ ] Complete the architecture overview
+- [ ] Define the consensus algorithm
