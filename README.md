@@ -3,6 +3,7 @@
 ## Introduction 
 
 The purpose of this application is to provide a dooldle-like experience for the end user, but this time the application runs distributed and the meetings are automatically accepted or rejected, without running a poll, nor human interaction.
+The infrastructure and core building block are provided by [PrivateSky](https://privatesky.xyz/?Overview/main-innovations)
 
 ## How does it work
 
@@ -12,6 +13,18 @@ The user can now create a meeting by providing
 ![High Level](images/HighLevel%20-%20SSApp%20Integration.png)
 
 ## SSoddle Architecture Overview
+Front end
+- written in js using [Cardinal.JS Framework](https://privatesky.xyz/?Overview/main-innovations&chapter=cardinaljs-subproject)([GitHub](https://github.com/PrivateSky/cardinal.git)).
+
+Application Logic
+- tbd
+
+Middle ware
+- tbd
+
+Service Workers
+- tbd
+
 ![SSApp Architecture](images/HighLevel%20-%20SSApp.png)
 
 ## Swarm description
@@ -34,19 +47,19 @@ To accommodate this reality, consensus algorithms necessarily assume that some p
 ## SSoodle rest API
 
 
-`GET` Get users
+### `GET` Get users
 
     http://localhost:8080/rest/api/users
 
-`GET` Get meetings
+### `GET` Get meetings
 
     http://localhost:8080/rest/api/reunions
 
-`GET` Get meetings for a user
+### `GET` Get meetings for a user
 
     http://localhost:8080/rest/api/users/1/reunions
 
-`POST` Create user
+### `POST` Create user
 
     http://localhost:8080/rest/api/users
 
@@ -60,7 +73,7 @@ To accommodate this reality, consensus algorithms necessarily assume that some p
         "first-name" : "First Name"
     }
 
-`POST` Create meeting
+### `POST` Create meeting
 
     http://localhost:8080/rest/api/reunions
 
