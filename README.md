@@ -107,7 +107,7 @@ These APIs were defined after evaluating what was part of [Doodle API](https://d
 ## Web-Wallet: first run 
 The SSApp application loader is the first thing you'll see after running the [web-wallet](https://github.com/PrivateSky/web-wallet) web server and accessing `http://localhost:8080/secure-channels/loader`. It is a basic web application which allows creation and loading of wallets based on the menu wallet template. The SSApp loader registers a service worker responsible with loading the built SSApps from the Brick Storage.
     
-    user@pc:~$ git clone git clone https://github.com/PrivateSky/web-wallet.git
+    user@pc:~$ git clone https://github.com/PrivateSky/web-wallet.git
     user@pc:~$ cd web-wallet
     user@pc:~/web-wallet$ npm install
     user@pc:~/web-wallet$ npm run server
