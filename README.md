@@ -7,7 +7,7 @@ The infrastructure and core building block are provided by [PrivateSky](https://
 
 ## How does it work
 
-The user installs the SSApp Doodle inside his web-wallet and grants access to the SSApp Doodle applicaion to read and write into his callendar. The SSApp Doodle is using CalDAV protocaol (specified in [rfc4791](https://tools.ietf.org/html/rfc4791)) to access the user's calendar (in the example below [Google calendar](https://developers.google.com/calendar/caldav/v2/guide)).
+The user installs the SSApp Doodle inside his web-wallet and grants access to the SSApp Doodle application to read and write into his calendar. The SSApp Doodle is using CalDAV protocol (specified in [rfc4791](https://tools.ietf.org/html/rfc4791)) to access the user's calendar (in the example below [Google calendar](https://developers.google.com/calendar/caldav/v2/guide)).
 The user can now create a meeting by providing
 
 ![High Level](images/HighLevel%20-%20SSApp%20Integration.png)
