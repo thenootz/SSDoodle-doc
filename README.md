@@ -12,7 +12,7 @@ The user can now create a meeting by providing
 
 ![High Level](images/HighLevel%20-%20SSApp%20Integration.png)
 
-## SSoddle Architecture Overview
+## SSDoodle Architecture Overview
 Front end
 - written in js using [Cardinal.JS Framework](https://privatesky.xyz/?Overview/main-innovations&chapter=cardinaljs-subproject)([GitHub](https://github.com/PrivateSky/cardinal.git)).
 
@@ -38,13 +38,13 @@ To accommodate this reality, consensus algorithms necessarily assume that some p
 
 ![SSoddle Offline nodes](images/HighLevel%20-%20swarm%20with%20offline%20nodes.png)
 
-## SSoddle UseCases
+## SSDoodle UseCases
 
 ### Create a meeting
 
 ![Create a meeting](images/UseCase-Create-a-new-meeting.png)
 
-## SSoodle rest API
+## SSDoodle rest API
 
 
 ### `GET` Get users
